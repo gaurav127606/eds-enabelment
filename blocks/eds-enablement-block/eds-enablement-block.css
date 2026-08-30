@@ -1,21 +1,46 @@
 .eds-enablement-block {
-  border: 2px solid #2680eb;
-  border-radius: 8px;
-  padding: 16px;
-  background: #f4f8ff;
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 40px;
+  border-radius: 24px;
+  background: #1e1e1e;
+  color: #f5f5f5;
 }
 
-.eds-enablement-block-row {
-  padding: 8px 0;
+.eds-enablement-block > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.eds-enablement-block-text {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #fff;
+}
+
+.eds-enablement-block-image {
+  width: 100%;
+}
+
+.eds-enablement-block-image picture,
+.eds-enablement-block-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 /* session-two: table cell "EDS Enablement Block (session-two)" adds this variant class */
 .eds-enablement-block.session-two {
-  background: #eef6ee;
-  border-color: #2d9d78;
+  background: #14532d;
 }
 
 /* session-practice: table cell "EDS Enablement Block (session-practice)" adds this variant class */
 .eds-enablement-block.session-practice {
-  border-style: dashed;
+  border: 1px dashed rgb(255 255 255 / 40%);
 }
